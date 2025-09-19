@@ -9,7 +9,7 @@ export default function Navigation(){
   const navContext = useNavigationContext()
 
   return <>
-    <nav id="navigation" className={clsx("theme-secondary h-nav partial-fixed", !navContext.data.showNavBar && "hide")}>
+    <nav id="navigation" className={clsx("theme-primary h-nav partial-fixed", !navContext.data.showNavBar && "hide")}>
       <div className="centered-content-md flex h-full justify-between">
         <NavLogo/>
         <div className="flex-panel">

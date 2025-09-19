@@ -39,7 +39,7 @@
     }
 
     main{
-      @apply min-h-main pt-match-nav;
+      @apply min-h-main;
     }
 
     .fill-height{

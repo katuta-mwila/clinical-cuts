@@ -59,7 +59,7 @@ export default function Footer(){
     }
   ]
 
-  return <footer className="theme-primary md:py-20 py-10">
+  return <footer className="theme-secondary md:py-20 py-10">
     <div className="flex-vert centered-content-md gap-10">
       <div className="flex lg:flex-row flex-col gap-x-20 gap-y-10">
         <div>

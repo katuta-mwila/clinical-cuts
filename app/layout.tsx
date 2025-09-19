@@ -19,7 +19,7 @@ export default function RootLayout({children}: {children: React.ReactNode}) {
             <header className="w-full z-2000 pointer-events-none">
               <Navigation/>
             </header>
-            <main className="theme-primary">
+            <main className="theme-secondary">
               {children}
             </main>
             <Footer/>

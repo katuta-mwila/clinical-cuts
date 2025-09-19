@@ -32,12 +32,25 @@
   @apply absolute left-[50%] top-[50%] -translate-[50%];
 }
 
+@utility abs-center-y{
+  @apply absolute top-[50%] -translate-y-[50%];
+}
+
+@utility abs-center-x{
+  @apply absolute left-[50%] -translate-x-[50%];
+}
+
 @utility abs-cover{
   @apply absolute w-full h-full top-0 left-0;
 }
 
 @utility centered-content-*{
-  @apply m-auto md:w-[min(--value(--width-content-*),90vw)] w-[min(--value(--width-content-*),85vw)];
+  @apply mx-auto;
+
+  width: min(--value(--width-content-*),85vw);
+  @media (width >= 48rem){
+    width: min(--value(--width-content-*),90vw);
+  }
 }
 
 @utility shadow-sm-high{
@@ -115,7 +128,7 @@
 }
 
 @utility button-one{
-  @apply bg-accent-1 text-accent-1-text cursor-pointer rounded-sm px-5 py-3 hover:bg-accent-1-shade-1 active:bg-accent-1-shade-2;
+  @apply text-3xl bg-accent-1 text-accent-1-text cursor-pointer rounded-4xl px-8 py-4 shadow-[3px_3px_2px_2px_#000] hover:bg-accent-1-shade-1 active:bg-accent-1-shade-2;
 }
 
 @utility button-two{

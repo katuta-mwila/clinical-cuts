@@ -1,5 +1,16 @@
 @layer components{
 
+  .button-cta{
+    @apply text-3xl bg-accent-1 text-accent-1-text cursor-pointer rounded-4xl px-8 py-4 hover:bg-accent-1-shade-1 active:bg-accent-1-shade-2;
+    box-shadow: 3px 3px 2px 2px #000;
+    transition: box-shadow 0.1s;
+    &:active{
+      box-shadow: 1px 1px 1px 1px #000;
+    }
+
+
+  }
+
   .generic-tab{
     .underline-button{
       @apply lg:text-lg text-base cursor-pointer flex-vert items-center px-2;

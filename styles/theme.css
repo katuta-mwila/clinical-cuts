@@ -1,27 +1,27 @@
 @theme {
-  --color-primary: hsl(0, 0%, 100%);
-  --color-primary-shade-1: hsl(0, 0%, 95%);
-  --color-primary-shade-2: hsl(0, 0%, 90%);
-  --color-primary-text: hsl(0, 0%, 10%);
+  --color-primary: hsl(37, 74%, 92%);
+  --color-primary-shade-1: hsl(40, 60%, 82%);
+  --color-primary-shade-2: hsl(40, 60%, 75%);
+  --color-primary-text: hsl(210, 15%, 15%);
 
-  --color-secondary: hsl(30, 70%, 45%);
-  --color-secondary-shade-1: hsl(30, 70%, 38%);
-  --color-secondary-shade-2: hsl(30, 70%, 30%);
-  --color-secondary-text: hsl(0, 0%, 100%);
+  --color-secondary: hsl(0, 0%, 100%);
+  --color-secondary-shade-1: hsl(0, 0%, 96%);
+  --color-secondary-shade-2: hsl(0, 0%, 90%);
+  --color-secondary-text: hsl(210, 15%, 15%);
 
-  --color-tertiary: hsl(210, 15%, 18%);
-  --color-tertiary-shade-1: hsl(210, 15%, 24%);
-  --color-tertiary-shade-2: hsl(210, 15%, 30%);
+  --color-tertiary: hsl(210, 15%, 15%);
+  --color-tertiary-shade-1: hsl(210, 15%, 22%);
+  --color-tertiary-shade-2: hsl(210, 15%, 28%);
   --color-tertiary-text: hsl(0, 0%, 100%);
 
-  --color-accent-1: hsl(280, 65%, 55%);
-  --color-accent-1-shade-1: hsl(280, 65%, 45%);
-  --color-accent-1-shade-2: hsl(280, 65%, 35%);
-  --color-accent-1-text: hsl(0, 0%, 100%);
+  --color-accent-1: hsl(0, 0%, 22%);
+  --color-accent-1-shade-1: hsl(0, 0%, 32%);
+  --color-accent-1-shade-2: hsl(0, 0%, 32%);
+  --color-accent-1-text: hsl(0, 0%, 93%);
 
-  --color-accent-2: hsl(160, 65%, 42%);
-  --color-accent-2-shade-1: hsl(160, 65%, 34%);
-  --color-accent-2-shade-2: hsl(160, 65%, 26%);
+  --color-accent-2: hsl(160, 55%, 40%);
+  --color-accent-2-shade-1: hsl(160, 55%, 32%);
+  --color-accent-2-shade-2: hsl(160, 55%, 24%);
   --color-accent-2-text: hsl(0, 0%, 100%);
 
   --color-error-red: #ff583e;
@@ -46,5 +46,5 @@
   --padding-section-x: 0;
   --padding-section-y: 120px;
 
-  --font-main: "Open Sans", sans-serif;
+  --font-main: "Sofia Pro Regular";
 }
