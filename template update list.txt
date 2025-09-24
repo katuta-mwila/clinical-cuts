@@ -4,3 +4,4 @@
 - figure out pattern for first section and how it relates to nav
 - clean up way of doing images
 - object-cc utility class
+- fix imagescript naming once and for all
