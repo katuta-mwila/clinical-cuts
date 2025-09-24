@@ -34,37 +34,30 @@ export const navigationTabs: ITab[] = [
     subTabs: []
   },
   {
-    id: "page-2",
+    id: "services",
     text: "Services",
-    href: rootPath + "/page-2",
-    hasDropdown: true,
+    href: rootPath + "/services",
+    hasDropdown: false,
     desktop: desktopTabDesign,
     mobile: mobileTabDesign,
-    subTabs: [
-      {
-        pathType: "relative",
-        href: "/subpage-1",
-        text: "Website Building"
-      },
-      {
-        pathType: "relative",
-        href: "/subpage-2",
-        text: "Analytics"
-      },
-      {
-        pathType: "relative",
-        href: "/subpage-3",
-        text: "Research"
-      }
-    ]
+    subTabs: []
   },
   {
-    id: "page-3",
-    text: "Page 3",
-    href: rootPath + "/page-3",
+    id: "about",
+    text: "About",
+    href: rootPath + "/about",
     hasDropdown: false,
     desktop: desktopTabDesign,
     mobile: undefined,
     subTabs: []
   },
+  /*{
+    id: "book",
+    text: "Book",
+    href: rootPath + "/book",
+    hasDropdown: false,
+    desktop: desktopTabDesign,
+    mobile: undefined,
+    subTabs: []
+  },*/
 ]

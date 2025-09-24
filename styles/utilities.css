@@ -44,6 +44,10 @@
   @apply absolute w-full h-full top-0 left-0;
 }
 
+@utility object-cc{
+  @apply object-cover object-center;
+}
+
 @utility centered-content-*{
   @apply mx-auto;
 
@@ -181,4 +185,10 @@
 @utility text-h6 {
   font-size: clamp(var(--text-lg), 2.34vw, var(--text-xl));
   line-height: var(--tw-leading, var(--text-xl--line-height));
+}
+
+@utility shadow-custom-1{
+  box-shadow: 
+    1px 1px 0px 2px #303030,
+    2px 2px 2px 2px #303030;
 }

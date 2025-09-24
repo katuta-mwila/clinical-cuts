@@ -1,9 +1,8 @@
 "use client"
 
+import { PubImages } from "@/imageData";
 import Link from "next/link";
 import Image from "next/image";
-import { PubImages } from "@/imageData";
-import clsx from "clsx";
 import { BlurImage } from "@/components/MediaComponents/BlurImage";
 
 
@@ -25,5 +24,9 @@ export default function Hero(){
       </div>
       <Link href="" className="button-cta">Book a Session</Link>
     </div>
+    <div className="absolute rounded-full w-60 h-60 overflow-hidden right-35 top-35 bg-white p-2 shadow-xl-high">
+      <BlurImage alt="" blurSrc={PubImages.stock.cleancut} containerClass="rounded-full w-full h-full bg-white p-5" centerFill/>
+    </div>
+    <BlurImage alt="" blurSrc={PubImages.stock.clipper} containerClass="absolute w-100 top-20 left-0 p-5 -rotate-30"/>
   </section>
 }

@@ -48,7 +48,7 @@
 
     nav.partial-fixed{
       transform: translateY(0);
-      transition: transform 0.15s ease-out;
+      transition: all 0.15s ease-out;
       &.hide{
         transform: translateY(-105%);
         pointer-events: none;

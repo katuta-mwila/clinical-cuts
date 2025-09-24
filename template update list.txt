@@ -1,0 +1,6 @@
+- Remove alt mandatory from blurImage
+- Redo navigation tabs (package navigation styles togeather)
+- Review how I style buttons
+- figure out pattern for first section and how it relates to nav
+- clean up way of doing images
+- object-cc utility class

@@ -19,10 +19,10 @@
   --color-accent-1-shade-2: hsl(0, 0%, 32%);
   --color-accent-1-text: hsl(0, 0%, 93%);
 
-  --color-accent-2: hsl(160, 55%, 40%);
-  --color-accent-2-shade-1: hsl(160, 55%, 32%);
-  --color-accent-2-shade-2: hsl(160, 55%, 24%);
-  --color-accent-2-text: hsl(0, 0%, 100%);
+  --color-accent-2: hsl(110, 73%, 47%);
+  --color-accent-2-shade-1: hsl(110, 73%, 47%);
+  --color-accent-2-shade-2: hsl(110, 73%, 47%);
+  --color-accent-2-text: hsl(0, 0%, 0%);
 
   --color-error-red: #ff583e;
 
@@ -44,7 +44,7 @@
   --padding-nav-x: 20px;
   --padding-nav-y: 0;
   --padding-section-x: 0;
-  --padding-section-y: 120px;
+  --padding-section-y: 90px;
 
   --font-main: "Sofia Pro Regular";
 }

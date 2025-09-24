@@ -12,13 +12,14 @@ interface Props{
   disableBlur?: boolean, /* here incase it's decided that the blur is no good */
   src?: string | StaticImageData
   blurSrc?: IBlurSrc
+  alt?: string
 }
 
-type IBlurImage = Omit<ImageProps, "src"> & Props
+type IBlurImage = Omit<Omit<ImageProps, "src">, "alt"> & Props
 
 export const BlurImage = (props: IBlurImage) =>{
   const [loaded, setLoaded] = useState(false)
-  let {containerClass, blurUrl, disableBlur, onLoad, className, centerFill, style, fill, src, blurSrc, ...imageProps}: IBlurImage  = props
+  let {containerClass, blurUrl, disableBlur, onLoad, className, centerFill, style, fill, src, blurSrc, alt="", ...imageProps}: IBlurImage  = props
 
   const onImageLoad = (e: SyntheticEvent<HTMLImageElement, Event>) =>{
     setLoaded(true)
@@ -44,6 +45,6 @@ export const BlurImage = (props: IBlurImage) =>{
     backgroundSize: 'cover',
     position: centerFill ? 'relative' : undefined
   }}>
-    <Image {...imageProps} src={src} fill={fill || centerFill} style={{...centerFillStyle ,...style}} onLoad={onImageLoad} className={clsx(className, "transition-opacity duration-250", (loaded || disableBlur == true) ? "opacity-100" : "opacity-0")}/>
+    <Image {...imageProps} src={src} fill={fill || centerFill} alt={alt} style={{...centerFillStyle ,...style}} onLoad={onImageLoad} className={clsx(className, "transition-opacity duration-250", (loaded || disableBlur == true) ? "opacity-100" : "opacity-0")}/>
   </div>
 }
