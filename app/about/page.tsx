@@ -1,6 +1,8 @@
 import Intro from "./intro";
 import Mission from "./mission";
+import TheTeam from "./theteam";
 import TheWhy from "./thewhy";
+import Timeline from "./timeline/timeline";
 
 export default function AboutPage(){
   return <>
@@ -8,5 +10,7 @@ export default function AboutPage(){
     <Intro/>
     <Mission/>
     <TheWhy/>
+    <TheTeam/>
+    <Timeline/>
   </>
 }

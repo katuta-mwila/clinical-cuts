@@ -4,4 +4,5 @@
 - figure out pattern for first section and how it relates to nav
 - clean up way of doing images
 - object-cc utility class
-- fix imagescript naming once and for all
+- super sections?
+- padding util equal to space either side of centered-content divs

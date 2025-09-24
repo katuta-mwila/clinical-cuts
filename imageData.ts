@@ -22,6 +22,7 @@ import salon from "./public/images/stock/salon.jpg";
 import salon_customer from "./public/images/stock/salon_customer.webp";
 import storefront from "./public/images/stock/storefront.jpg";
 import storefront2 from "./public/images/stock/storefront2.jpg";
+import member1 from "./public/images/stock/teammembers/member1.PNG";
 import teamphoto from "./public/images/stock/teamphoto.jpg";
 import teamphoto_2 from "./public/images/stock/teamphoto_2.PNG";
 import user from "./public/images/stock/user.png";
@@ -113,6 +114,12 @@ export const PubImages = {
     storefront2: {
       main: storefront2,
       small: "/images/stock/storefront2-small.jpg"
+    },
+    teammembers: {
+      member1: {
+        main: member1,
+        small: undefined
+      }
     },
     teamphoto: {
       main: teamphoto,

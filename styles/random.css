@@ -152,8 +152,8 @@
 
 .fancy-image{
   @apply border-0;
-  height: 350px;
-  width: 350px;
+  height: 375px;
+  width: 375px;
   position: relative;
 
   &::before{

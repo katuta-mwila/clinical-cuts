@@ -4,7 +4,7 @@ import Image from "next/image"
 export default function TheWhy(){
   return <section className="py-section-y theme-secondary">
     <SVJesus/>
-    <div className="centered-content-full grid-resp-md-2">
+    <div className="centered-content-full grid-resp-md-2 gap-20">
       <div className="flex-center">
         <div className="fancy-image">
           <Image alt="" src={PubImages.stock.hero_man2.main} className="absolute bottom-0 w-[99%] opacity-100 bg-blue-400/20 clippydoo"/>
@@ -17,7 +17,7 @@ export default function TheWhy(){
       </div>
       <div className="vert-5">
         <h1>Why We Exist</h1>
-        <p className="text-h5">Our mission is to provide exceptional hair and grooming services that leave every client feeling confident, refreshed, and empowered. We believe that style is more than appearance, it is a reflection of individuality and self expression. With a skilled team and a commitment to quality, we create an experience that blends creativity, precision, and care.</p>
+        <p className="text-h5">We exist to help people look and feel their best every day. Our passion is crafting personalized styles that boost confidence and express individuality. At our core, we believe a great haircut or grooming session is more than appearance; it’s an experience.</p>
       </div>
     </div>
   </section>
@@ -25,19 +25,6 @@ export default function TheWhy(){
 
 // arc
 // A rx ry x-axis-rotation large-arc-flag sweep-flag x y
-
-const InverseSemi = function({className}){
-  return <svg className={className} width="100" height="50" viewBox="0 0 100 50" xmlns="http://www.w3.org/2000/svg">
-    <path d="
-            M -10,0
-            L -10,0 0,0 
-            A 50 50 0 0 0 50 50
-            A 50 50 0 0 0 100 0 
-            L 100,50 0,50 
-            Z
-            " fill="white" />
-  </svg>
-}
 
 function SVJesus(){
   return <svg width="0" height="0" xmlns="http://www.w3.org/2000/svg">
