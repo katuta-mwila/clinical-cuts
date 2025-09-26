@@ -171,39 +171,18 @@
   clip-path: url("#mask");
 }
 
-/*
-@keyframes scroll {
-	0% { transform: translateX(0); }
-	100% { transform: translateX(calc(-250px * 9))}
+#parallax-container{
+  background-image: url('/images/stock/salon.jpg');
+  background-size: cover; 
+  background-position: center; 
+  background-attachment: fixed; 
 }
 
-.slider {
-	box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
-	height: 100px;
-	margin: auto;
-	overflow:hidden;
-	position: relative;
-	width: 960px;
-
-  .slide-track {
-    animation-name: scroll;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-    animation-play-state: running;
-    animation-timing-function: linear;
-		display: flex;
-		width: calc(250px * 18);
-
-    &:hover{
-      animation-play-state: paused;
-    }
-	}
-
-  .slide {
-		height: 100px;
-		width: 250px;
-	}
+.tsc{
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6),
+  5px 5px 70px rgba(57, 65, 87, 0);
 }
 
-
-	*/
+.abc{
+  background: linear-gradient(180deg, white, var(--color-primary)) !important;
+}

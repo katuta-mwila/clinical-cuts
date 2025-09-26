@@ -9,8 +9,8 @@ import { useEffect, useRef, useState } from "react";
 export const sampleTimeline: ITimelineProps = {
   className: undefined,
   alternating: true,
-  lineColWidth: '120px',
-  verticalGap: '140px',
+  lineColWidth: '160px',
+  verticalGap: '120px',
   DateComponent,
   events: [
     {
@@ -61,27 +61,35 @@ export const sampleTimeline: ITimelineProps = {
 export default function BarberTimeline(){
 
   return <section id="parallax-container" className="theme-primary">
-    <Image alt="" className="parallax-image" src={PubImages.stock.storefront2.main}/>
-    <div className="centered-content-md vert-5 items-center">
-      {/*<Timeline {...sampleTimeline}/>*/}
+    <div className="theme-primary bg-primary/40 py-section-y">
+      <div className="centered-content-md vert-20 items-center">
+        <div className="bg-white px-12 py-6 shadow-xl rounded-4xl">
+          <h1 className="tsc">Our Journey</h1>
+        </div>
+        
+        <Timeline {...sampleTimeline}/>
+      </div>
     </div>
+    
     
   </section>
 }
 
 function Bubble(props: {Icon: React.ElementType}){
-  return <div className="p-3 bg-white border flex-center rounded-full">
+  return <div className="bg-accent-1 text-white p-3 border border-black flex-center rounded-full">
     <props.Icon className="w-7 h-7"/>
   </div>
 }
 
 function Card(event: ITimelineEvent){
-  return <div className="shadow-md bg-secondary p-5 rounded vert-1">
-    <h5>{event.title}</h5>
+  return <div className="theme-primary shadow-xl-high p-5 rounded-lg vert-1 abc">
+    <h5 className="font-bold">{event.title}</h5>
     <p className="text-tint-dark">{event.description}</p>
   </div>
 }
 
 function DateComponent(event: ITimelineEvent){
-  return <h4>{event.date}</h4>
+  return <div className="text-h5 bg-black/45 px-4 py-1 rounded-full text-white">
+    {event.date}
+  </div>
 }

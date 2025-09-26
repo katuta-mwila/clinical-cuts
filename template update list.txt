@@ -2,7 +2,7 @@
 - Redo navigation tabs (package navigation styles togeather)
 - Review how I style buttons
 - figure out pattern for first section and how it relates to nav
-- clean up way of doing images
+- clean up way of doing images, (add extention to exported names?)
 - object-cc utility class
 - super sections?
 - padding util equal to space either side of centered-content divs

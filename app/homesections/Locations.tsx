@@ -15,67 +15,66 @@ interface ILocation{
 
 const days = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
 
+export const storeLocations: ILocation[] = [
+  {
+    name: "Wellington Harbour",
+    address: "78 Waterfront Rd, Wellington City 6019",
+    hours: [
+      "9am-7pm",
+      "9am-7pm",
+      "9am-7pm",
+      "9am-7pm",
+      "9am-7pm",
+      "10am-5pm",
+      "12-5pm",
+    ],
+    mapsLink: "/",
+    staff: ["Liam Smith", "Sophie Cunning", "Carlos Alberto", "Ella Rodriguez"],
+    blurSrc: PubImages.stock.cuba_street,
+    ph: "0800 267 583"
+  },
+  {
+    name: "Auckland Central",
+    address: "120 Queen St, Auckland 1010",
+    hours: [
+      "8am-6pm",
+      "8am-6pm",
+      "8am-6pm",
+      "8am-6pm",
+      "8am-6pm",
+      "9am-4pm",
+      "Closed",
+    ],
+    mapsLink: "/",
+    staff: ["Hannah Lee", "Jack Turner", "Mia Wong"],
+    blurSrc: PubImages.stock.storefront,
+    ph: "0800 489 222"
+  },
+  {
+    name: "Christchurch Riverside",
+    address: "55 River Rd, Christchurch 8011",
+    hours: [
+      "9am-5pm",
+      "9am-5pm",
+      "9am-5pm",
+      "9am-5pm",
+      "9am-5pm",
+      "10am-3pm",
+      "Closed",
+    ],
+    mapsLink: "/",
+    staff: ["Oliver Brown", "Emily Davis", "Noah Johnson"],
+    blurSrc: PubImages.stock.storefront2,
+    ph: "0800 301 910"
+  }
+]
 
 export default function Locations(){
-  const locations: ILocation[] = [
-    {
-      name: "Wellington Harbour",
-      address: "78 Waterfront Rd, Wellington City 6019",
-      hours: [
-        "9am-7pm",
-        "9am-7pm",
-        "9am-7pm",
-        "9am-7pm",
-        "9am-7pm",
-        "10am-5pm",
-        "12-5pm",
-      ],
-      mapsLink: "/",
-      staff: ["Liam Smith", "Sophie Cunning", "Carlos Alberto", "Ella Rodriguez"],
-      blurSrc: PubImages.stock.cuba_street,
-      ph: "0800 267 583"
-    },
-    {
-      name: "Auckland Central",
-      address: "120 Queen St, Auckland 1010",
-      hours: [
-        "8am-6pm",
-        "8am-6pm",
-        "8am-6pm",
-        "8am-6pm",
-        "8am-6pm",
-        "9am-4pm",
-        "Closed",
-      ],
-      mapsLink: "/",
-      staff: ["Hannah Lee", "Jack Turner", "Mia Wong"],
-      blurSrc: PubImages.stock.storefront,
-      ph: "0800 489 222"
-    },
-    {
-      name: "Christchurch Riverside",
-      address: "55 River Rd, Christchurch 8011",
-      hours: [
-        "9am-5pm",
-        "9am-5pm",
-        "9am-5pm",
-        "9am-5pm",
-        "9am-5pm",
-        "10am-3pm",
-        "Closed",
-      ],
-      mapsLink: "/",
-      staff: ["Oliver Brown", "Emily Davis", "Noah Johnson"],
-      blurSrc: PubImages.stock.storefront2,
-      ph: "0800 301 910"
-    }
-  ]
-
   return <section className="theme-secondary py-section-y">
     <div className="centered-content-xl vert-10">
       <h1>Locations & Opening Hours</h1>
       <div className="vert-0">
-        <QuickMap objects={locations} componentTag={LocationCard}/>
+        <QuickMap objects={storeLocations} componentTag={LocationCard}/>
       </div>
     </div>
   </section>
