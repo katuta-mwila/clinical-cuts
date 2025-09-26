@@ -2,7 +2,7 @@ import Intro from "./intro";
 import Mission from "./mission";
 import TheTeam from "./theteam";
 import TheWhy from "./thewhy";
-import Timeline from "./timeline/timeline";
+import Timeline from "./business-timeline";
 
 export default function AboutPage(){
   return <>
