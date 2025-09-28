@@ -7,3 +7,7 @@
 - super sections?
 - padding util equal to space either side of centered-content divs
 - halfway utlities?
+- make all <a> tags display block by default
+- todo.txt for every project
+- Update footer copyright
+- create some kind of screenSize hook

@@ -138,21 +138,34 @@
 .service-grid{
   display: grid;
   gap: 25px;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: 1fr;
   grid-auto-rows: 300px;
   grid-template-areas: 
+  "one"
+  "two"
+  "three"
+  "four"
+  "five";
+  
+  @media (width >= 48rem){ /*md*/
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas: 
     "one one one two two two"
     "three three four four five five"
   ;
+  }
 }
 
 .curved-bottom{
-  clip-path: ellipse(110% 100% at top);
+  clip-path: ellipse(190% 100% at top);
+  @media (width >= 48rem){
+    clip-path: ellipse(110% 100% at top);
+  }
 }
 
 .fancy-image{
   @apply border-0;
-  height: 375px;
+  aspect-ratio: 1 / 1;
   width: 375px;
   position: relative;
 

@@ -59,7 +59,7 @@ export function Team(team: ITeamLocation){
   return <div className="vert-10">
     <div className="vert-5">
       <h2 className="text-center">{team.locationName}</h2>
-      <QuickMap objects={team.members} componentTag={MemberCard} className="horz-10 justify-center"/>
+      <QuickMap objects={team.members} componentTag={MemberCard} className="horz-10 justify-center flex-wrap"/>
     </div>
   </div>
 }

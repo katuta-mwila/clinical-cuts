@@ -5,6 +5,7 @@ import { PubImages } from "@/imageData";
 import { Calendar, Briefcase, GraduationCap, Star, Users, Scissors, MapPin, ThumbsUp, Award } from "lucide-react";
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
+import CTA3 from "./CTA3";
 
 export const sampleTimeline: ITimelineProps = {
   className: undefined,
@@ -60,11 +61,29 @@ export const sampleTimeline: ITimelineProps = {
 
 export default function BarberTimeline(){
 
+  const [isDesktop, setIsDesktop] = useState(false);
+  
+  useEffect(() => {
+    const update = () => setIsDesktop(window.innerWidth >= 768);
+    update();
+    window.addEventListener("resize", update);
+    return () => window.removeEventListener("resize", update);
+  }, []);
+
+  if (!isDesktop){
+    sampleTimeline.alternating = false
+    sampleTimeline.lineColWidth = '80px'
+  }else{
+    sampleTimeline.alternating = true
+    sampleTimeline.lineColWidth = '160px'
+  }
+
   return <section id="parallax-container" className="theme-primary">
+    <CTA3/>
     <div className="theme-primary bg-primary/40 py-section-y">
       <div className="centered-content-md vert-20 items-center">
         <div className="bg-white px-12 py-6 shadow-xl rounded-4xl">
-          <h1 className="tsc">Our Journey</h1>
+          <h1 className="tsc text-center">Our Journey</h1>
         </div>
         
         <Timeline {...sampleTimeline}/>
@@ -83,12 +102,13 @@ function Bubble(props: {Icon: React.ElementType}){
 
 function Card(event: ITimelineEvent){
   return <div className="theme-primary shadow-xl-high p-5 rounded-lg vert-1 abc">
-    <h5 className="font-bold">{event.title}</h5>
+    <h5 className="font-bold">{!sampleTimeline.alternating ? `${event.date} - ` : ""}{event.title}</h5>
     <p className="text-tint-dark">{event.description}</p>
   </div>
 }
 
 function DateComponent(event: ITimelineEvent){
+  if (!sampleTimeline.alternating) return
   return <div className="text-h5 bg-black/45 px-4 py-1 rounded-full text-white">
     {event.date}
   </div>

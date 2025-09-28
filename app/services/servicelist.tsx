@@ -97,7 +97,7 @@ function ServiceCard(service: ServiceCategory){
     <div className="border-b-2 border-b-gray-400 pb-5 vert-1">
       <h3>{service.category}</h3>
     </div>
-    <div className="grid grid-cols-[minmax(250px,1fr)_3fr] gap-x-10">
+    <div className="grid md:grid-cols-[minmax(250px,1fr)_3fr] grid-cols-1 gap-x-10 gap-y-10">
       <div className="">
         <Image alt="" src={service.image} className="w-full aspect-[16/12] object-center object-cover rounded-lg shadow-xl"/>
       </div>

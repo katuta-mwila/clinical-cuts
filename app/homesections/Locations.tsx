@@ -70,9 +70,9 @@ export const storeLocations: ILocation[] = [
 ]
 
 export default function Locations(){
-  return <section className="theme-secondary py-section-y">
-    <div className="centered-content-xl vert-10">
-      <h1>Locations & Opening Hours</h1>
+  return <section className="theme-secondary pb-section-y">
+    <div className="centered-content-xl vert-0 md:vert-10">
+      <h1 className="text-left-md">Locations & Opening Hours</h1>
       <div className="vert-0">
         <QuickMap objects={storeLocations} componentTag={LocationCard}/>
       </div>
@@ -81,17 +81,18 @@ export default function Locations(){
 }
 
 function LocationCard(location: ILocation){
-  return <div className="grid grid-cols-[2fr_1fr] gap-x-20">
-    <div className="border-b-2 border-b-gray-300 py-10">
-      <h3>{location.name}</h3>
-      <div className="flex">
-        <div className="grow vert-5 justify-center">
+  return <div className="grid lg:grid-cols-[2fr_1fr] grid-cols-1 gap-x-20 lg:border-b-0 border-b-2 border-b-gray-300 lg:pb-0 pb-8">
+    <div className="lg:border-b-2 border-b-0 border-b-gray-300 lg:bg-10 pt-10">
+      <h3 className="mb-5 text-left-md">{location.name}</h3>
+      {/*<BlurImage blurSrc={location.blurSrc} containerClass="w-full aspect-[16/12] shadow-2xl rounded-lg" centerFill/>*/}
+      <div className="flex flex-wrap justify-center gap-x-10 gap-y-5">
+        <div className="shrink-1 grow-100 basis-[280px] vert-5 justify-center">
           <LocationItem Icon={MapPin} title={"Address"} info={location.address}></LocationItem>
           <LocationItem Icon={Phone} title={"Phone Number"} info={location.ph}></LocationItem>
           <LocationItem Icon={UsersRound} title={"Barbers"} info={location.staff.join(", ")}></LocationItem>
           
         </div>
-        <div className="vert-1 shrink-0">
+        <div className="vert-1 grow min-w-[200px] shrink-0">
           <h5 className="text-center mb-2">Opening Hours</h5>
           {location.hours.map((hours, i) =>{
             return <div key={i} className="flex-panel text-tint-dark gap-15">
@@ -102,7 +103,7 @@ function LocationCard(location: ILocation){
         </div>
       </div>
     </div>
-    <div className="py-5">
+    <div className="py-5 flex items-center">
       <BlurImage blurSrc={location.blurSrc} containerClass="w-full aspect-[16/12] shadow-2xl rounded-lg" centerFill/>
     </div>
     

@@ -111,4 +111,8 @@
       @apply text-xl;
     }
   }
+
+  a{
+    display: block;
+  }
 }

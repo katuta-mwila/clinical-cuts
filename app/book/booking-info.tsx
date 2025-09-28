@@ -48,6 +48,6 @@ export default function BookingInfo(){
 
 function Waves(){
   return <div className="absolute w-full bottom-0 text-gray-100">
-    <svg width="100%" height="100%" id="svg" viewBox="0 0 1440 390" xmlns="http://www.w3.org/2000/svg" className="transition duration-300 ease-in-out delay-150"><path d="M 0,400 L 0,225 C 137.2,268.73333333333335 274.4,312.4666666666667 444,277 C 613.6,241.53333333333333 815.5999999999999,126.86666666666667 987,80 C 1158.4,33.13333333333333 1299.2,54.06666666666666 1440,75 L 1440,400 L 0,400 Z" stroke="none" stroke-width="0" fill="currentColor" fill-opacity="1" className="transition-all duration-300 ease-in-out delay-150 path-0"></path></svg>
+    <svg width="100%" height="100%" id="svg" viewBox="0 0 1440 390" xmlns="http://www.w3.org/2000/svg" className="transition duration-300 ease-in-out delay-150"><path d="M 0,400 L 0,225 C 137.2,268.73333333333335 274.4,312.4666666666667 444,277 C 613.6,241.53333333333333 815.5999999999999,126.86666666666667 987,80 C 1158.4,33.13333333333333 1299.2,54.06666666666666 1440,75 L 1440,400 L 0,400 Z" stroke="none" strokeWidth="0" fill="currentColor" fillOpacity="1" className="transition-all duration-300 ease-in-out delay-150 path-0"></path></svg>
   </div>
 }

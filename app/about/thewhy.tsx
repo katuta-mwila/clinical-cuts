@@ -2,22 +2,22 @@ import { PubImages } from "@/imageData"
 import Image from "next/image"
 
 export default function TheWhy(){
-  return <section className="py-section-y theme-secondary">
+  return <section className="pb-section-y md:pt-section-y theme-secondary">
     <SVJesus/>
-    <div className="centered-content-full grid-resp-md-2 gap-20">
-      <div className="flex-center">
+    <div className="centered-content-full grid-resp-md-2 gap-x-20 gap-y-[35vw]">
+      <div className="vert-5 md:order-2">
+        <h1>Why We Exist</h1>
+        <p className="text-h5">We exist to help people look and feel their best every day. Our passion is crafting personalized styles that boost confidence and express individuality. At our core, we believe a great haircut or grooming session is more than appearance; it’s an experience.</p>
+      </div>
+      <div className="flex-center md:order-1">
         <div className="fancy-image">
-          <Image alt="" src={PubImages.stock.hero_man2.main} className="absolute bottom-0 w-[99%] opacity-100 bg-blue-400/20 clippydoo"/>
+          <Image alt="" src={PubImages.stock.hero_man2.main} className="absolute bottom-0 w-[100%] opacity-100 bg-blue-400/20 clippydoo"/>
           
         </div>
         {/*<div className="theme-primary bg-primary rounded-full aspect-square w-[45%] relative">
           
           <Image alt="" src={PubImages.stock.hero_man2.main} className="absolute bottom-0 w-[99%] opacity-100 bg-blue-400/20 clippydoo"/>
         </div>*/}
-      </div>
-      <div className="vert-5">
-        <h1>Why We Exist</h1>
-        <p className="text-h5">We exist to help people look and feel their best every day. Our passion is crafting personalized styles that boost confidence and express individuality. At our core, we believe a great haircut or grooming session is more than appearance; it’s an experience.</p>
       </div>
     </div>
   </section>

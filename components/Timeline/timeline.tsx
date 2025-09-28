@@ -38,7 +38,7 @@ export default function Timeline({
       const isLast = i === events.length - 1
       const showLeft = alternating && (i % 2 !== 0)
       return <Fragment key={event.title}>
-        <div>
+        <div className="">
           {showLeft && <EventArea event={event} verticalGap={verticalGap}/>}
         </div>
         

@@ -3,7 +3,7 @@ import Mission from "./mission";
 import TheTeam from "./theteam";
 import TheWhy from "./thewhy";
 import Timeline from "./business-timeline";
-import CTA3 from "./CTA2";
+import CTA3 from "./CTA3";
 
 export default function AboutPage(){
   return <>
@@ -12,7 +12,7 @@ export default function AboutPage(){
     <Mission/>
     <TheWhy/>
     <TheTeam/>
-    <CTA3/>
+    {/* <CTA3/> */}
     <Timeline/>
     
   </>

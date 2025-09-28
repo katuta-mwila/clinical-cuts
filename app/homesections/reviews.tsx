@@ -104,25 +104,34 @@ export default function Reviews(){
   return <section className="theme-primary pb-section-y">
     <div className="w-full vert-10">
       <div className="centered-content-full">
-        <h1>Reviews</h1>
+        <h1 className="text-left-md">Reviews</h1>
       </div>
       
-      <div className="slider relative" style={{width: (cardWidth * 3) + "px"}}>
+      <div className="md:block hidden slider relative" style={{width: (cardWidth * 3) + "px"}}>
         <div ref={trackRef} className="slide-track flex" style={{width: (2 * numCards * cardWidth) + "px"}} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
           {reviews.map((review, i) =>{
-            return <ReviewCard key={i} review={review} width={cardWidth}/>
+            return <ReviewCard key={i} review={review} width={cardWidth + 'px'}/>
           })}
           {reviews.map((review, i) =>{
-            return <ReviewCard key={i} review={review} width={cardWidth}/>
+            return <ReviewCard key={i} review={review} width={cardWidth + 'px'}/>
           })}
         </div>
+      </div>
+      <div className="md:hidden flex flex-col gap-10">
+        {
+        reviews.map((review, i) =>{
+          if (i >= 3) return
+          return <ReviewCard key={i} review={review} width={'100%'}/>
+        })
+
+        }
       </div>
     </div>
   </section>
 }
 
-function ReviewCard({review, width}: {review: IReview, width: number}){
-  return <div className="slide flex px-5" style={{width: width + 'px'}}>
+function ReviewCard({review, width}: {review: IReview, width: string}){
+  return <div className="slide flex px-5" style={{width}}>
     <div className="p-5 theme-secondary grow vert-3 rounded-xl shadow-custom-1">
       <div className="flex-panel gap-5">
         <div className="w-13 h-13 rounded-full border border-gray-400 overflow-hidden">
