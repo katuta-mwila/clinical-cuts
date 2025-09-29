@@ -10,7 +10,7 @@ import Link from "next/link"
 export default function Navigation(){
   const pathname = usePathname()
   const navContext = useNavigationContext()
-  const transparent = (pathname == "/" || pathname == "/servsices") && navContext.data.is0Scroll
+  const transparent = (pathname == "/") && navContext.data.is0Scroll
 
   return <>
     <nav id="navigation" className={clsx("h-nav partial-fixed", !navContext.data.showNavBar && "hide", (!transparent && navContext.data.showNavBar) && "shadow-lg")}>
@@ -24,7 +24,7 @@ export default function Navigation(){
                 return <GenericTab key={tab.id} tab={tab} navType="desktop"/>
               })}
             </div>
-            <Link href="/book" className="button-cta-light text-lg px-5 py-2">Book Now</Link>
+            <Link href="/book" className="md:block hidden button-cta-light text-lg px-5 py-2">Book Now</Link>
             <MobileNav/>
           </div>
         </div>

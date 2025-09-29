@@ -8,7 +8,7 @@ export default function CTA(){
         <h1 >Ready for a new look? </h1>
         <h1>Book your appointment today</h1>
       </div>
-      <Link href="/" className="button-cta-2">Book Now</Link>
+      <Link href="/book" className="button-cta-2">Book Now</Link>
     </div>
   </ImageSection>
 }

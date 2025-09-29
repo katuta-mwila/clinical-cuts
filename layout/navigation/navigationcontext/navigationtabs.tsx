@@ -48,7 +48,7 @@ export const navigationTabs: ITab[] = [
     href: rootPath + "/about",
     hasDropdown: false,
     desktop: desktopTabDesign,
-    mobile: undefined,
+    mobile: mobileTabDesign,
     subTabs: []
   },
   /*{

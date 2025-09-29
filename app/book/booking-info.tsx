@@ -41,7 +41,7 @@ export default function BookingInfo(){
           </div>
         })}
       </div>
-      <p className="text-h5 text-tint-dark">For general enquiries email <Link href="/" className="text-accent-2 underline">admin@clinicalcuts.co.nz</Link></p>
+      <p className="text-h5 text-tint-dark">For general enquiries email <Link href="/" className="text-accent-2 underline inline">admin@clinicalcuts.co.nz</Link></p>
     </div>
   </section>
 }

@@ -28,7 +28,7 @@ export default function Hero(){
           {/*<BlurImage alt="" blurSrc={PubImages.stock.clipper} containerClass="absolute w-100 top-20 left-0 p-5 -rotate-30"/>*/}
         </div>
         <div className="relative self-stretch flex justify-center">
-          <Link href="" className="button-cta">Book a Session</Link>
+          <Link href="/book" className="button-cta">Book a Session</Link>
         </div>
         <div className="lg:block hidden absolute rounded-full w-[15vw] min-w-[70px] aspect-square overflow-hidden right-[1vw] top-[var(--height-nav)] bg-white p-[0.6vw] shadow-xl-high">
           <BlurImage alt="" blurSrc={PubImages.stock.cleancut} containerClass="rounded-full w-full h-full bg-white p-5" centerFill/>

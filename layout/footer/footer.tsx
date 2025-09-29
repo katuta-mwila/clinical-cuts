@@ -1,5 +1,6 @@
 import { NavLogo } from "@/components/logos";
 import { Facebook, Instagram, Linkedin } from "@/svgdata";
+import { Mail, Phone } from "lucide-react";
 import Link from "next/link";
 
 export default function Footer(){
@@ -8,58 +9,40 @@ export default function Footer(){
       category: "Site Map",
       links: [
         {name: "Home", link: "/"},
-        {name: "About", link: "/about"},
         {name: "Services", link: "/services"},
-        {name: "Our Work", link: "/our-work"},
-        {name: "Contact", link: "/contact"},
+        {name: "About", link: "/about"},
+        {name: "Book", link: "/book"},
       ]
     },
     {
       category: "Services",
       links: [
-        {name: "Social Media", link: "/"},
-        {name: "Website Building", link: "/"},
-        {name: "Advertising", link: "/"},
-        {name: "Strategy & planning", link: "/"},
-        {name: "SEO Optimisation", link: "/"},
+        {name: "Haircuts", link: "/services"},
+        {name: "Styling", link: "/services"},
+        {name: "Beard & Grooming", link: "/services"},
+        {name: "Coloring", link: "/services"},
+        {name: "Brows & Lashes", link: "/services"},
       ]
     },
-    {
-      category: "Help",
-      links: [
-        {name: "Contact", link: "/"},
-        {name: "FAQ", link: "/"},
-        {name: "Private Policy", link: "/"},
-        {name: "Cookies", link: "/"}
-      ]
-    },
-    {
-      category: "Blog",
-      links: [
-        {name: "Latest Website", link: "/"},
-        {name: "New Technology", link: "/"},
-        {name: "Future of AI", link: "/"},
-        {name: "Security Considerations", link: "/"}
-      ]
-    }
+ 
   ]
 
   const socials = [
     {
       link: 'https://www.facebook.com/',
-      logo: <Facebook className="h-6 w-6 cursor-pointer hover:text-accent-1"/>
+      logo: <Facebook className="h-6 w-6 cursor-pointer hover:text-accent-2"/>
     },
     {
       link: "https://www.instagram.com/",
-      logo: <Instagram className="h-6 w-6 cursor-pointer hover:text-accent-1"/>,
+      logo: <Instagram className="h-6 w-6 cursor-pointer hover:text-accent-2"/>,
     },
     {
       link: "https://www.linkedin.com/",
-      logo: <Linkedin className="h-6 w-6 cursor-pointer hover:text-accent-1"/>
+      logo: <Linkedin className="h-6 w-6 cursor-pointer hover:text-accent-2"/>
     }
   ]
 
-  return <footer className="theme-secondary md:py-20 py-10">
+  return <footer className="theme-tertiary md:py-20 py-10">
     <div className="flex-vert centered-content-md gap-10">
       <div className="flex lg:flex-row flex-col gap-x-20 gap-y-10">
         <div>
@@ -72,17 +55,34 @@ export default function Footer(){
                   <h5 className="font-bold">{cat.category}</h5>
                   <div className="flex-vert gap-1">
                     {cat.links.map(link =>{
-                      return <Link key={link.name} className="text-tint-dark hover:text-accent-1 text-sm" href={link.link}>{link.name}</Link>
+                      return <Link key={link.name} className="text-tint-light hover:text-accent-2 text-sm" href={link.link}>{link.name}</Link>
                     })}
                   </div>
                 </div>
               </div>
             })}
+            <div className="vert-2 w-[180x]">
+              <h5 className="font-bold">Contact Info</h5>
+              <div className="horz-2 text-sm text-tint-light">
+                <Phone className="min-w-4 w-4 min-h-4 h-4"/>
+                <div>
+                  <div>Phone</div>
+                  <div className="font-bold">0800 267 583</div>
+                </div>
+              </div>
+              <div className="horz-2 text-sm text-tint-light">
+                <Mail className="min-w-4 w-4 min-h-4 h-4"/>
+                <div>
+                  <div>Email</div>
+                  <div className="font-bold">admin@clinicalcuts.co.nz</div>
+                </div>
+              </div>
+            </div>
           </div>
       </div> 
       <div className="border-t border-t-gray-400"></div>
       <div className="flex md:flex-row flex-col-reverse gap-x-10 gap-y-5">
-        <p className="text-sm grow md:text-start text-center text-tint-dark">Copyright © 2025 Woodmanweb.co.nz, All Right Reserved</p>
+        <p className="text-sm grow md:text-start text-center text-tint-light">NOTE: This is a mock website created for practice purposes</p>
         <div className="flex-panel md:justify-start justify-center gap-2 text-2">
           {socials.map(social =>{
             return <Link key={social.link} href={social.link} target="_blank">{social.logo}</Link>

@@ -44,7 +44,7 @@ export default function Services(){
       <div className="service-grid">
         <QuickMap objects={services} componentTag={ServiceCard}/>
       </div>
-      <Link href="" className="button-cta-2 self-center">Pricing & Details</Link>
+      <Link href="/services" className="button-cta-2 self-center">Pricing & Details</Link>
     </div>
   </section>
 }
