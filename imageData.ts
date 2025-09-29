@@ -1,6 +1,7 @@
 /* AUTO-GENERATED FILE. DO NOT EDIT */;
 
 import { StaticImageData } from "next/image";
+import favicon from "./public/images/favicon.jpg";
 import placeholder from "./public/images/placeholder.webp";
 import barbers from "./public/images/stock/barbers.png";
 import beard from "./public/images/stock/beard.jpg";
@@ -30,6 +31,10 @@ import user from "./public/images/stock/user.png";
 export interface IBlurSrc {main: StaticImageData, small?: string}
 
 export const PubImages = {
+  favicon: {
+    main: favicon,
+    small: undefined
+  },
   placeholder: {
     main: placeholder,
     small: "/images/placeholder-small.webp"

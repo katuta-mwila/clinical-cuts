@@ -6,10 +6,19 @@ import "react-multi-carousel/lib/styles.css";
 import { NavigationProvider } from "@/layout/navigation/navigationcontext/navigationcontext";
 import {Open_Sans} from 'next/font/google'
 import Script from "next/script";
+import { Metadata } from "next";
 
 const openSans = Open_Sans({
   subsets: ["latin"],
 })
+
+export const metadata: Metadata = {
+  title: "Clinical Cuts",
+  description: "Clinical Cuts Services",
+  icons: {
+    icon: "/images/favicon.jpg"
+  }
+}
 
 export default function RootLayout({children}: {children: React.ReactNode}) {
   return (
