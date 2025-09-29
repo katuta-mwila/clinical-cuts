@@ -12,7 +12,7 @@ import dying from "./public/images/stock/dying.webp";
 import haircut from "./public/images/stock/haircut.jpg";
 import haircut_man2 from "./public/images/stock/haircut_man2.webp";
 import haircut_man3 from "./public/images/stock/haircut_man3.jpg";
-import haircut_man_cropped from "./public/images/stock/haircut_man_cropped.PNG";
+import haircut_man_cropped from "./public/images/stock/haircut_man_cropped.png";
 import haircut_woman from "./public/images/stock/haircut_woman.jpg";
 import hair_dressing from "./public/images/stock/hair_dressing.jpg";
 import hero_man from "./public/images/stock/hero_man.png";
@@ -24,7 +24,7 @@ import storefront from "./public/images/stock/storefront.jpg";
 import storefront2 from "./public/images/stock/storefront2.jpg";
 import member1 from "./public/images/stock/teammembers/member1.PNG";
 import teamphoto from "./public/images/stock/teamphoto.jpg";
-import teamphoto_2 from "./public/images/stock/teamphoto_2.PNG";
+import teamphoto_2 from "./public/images/stock/teamphoto_2.png";
 import user from "./public/images/stock/user.png";
 
 export interface IBlurSrc {main: StaticImageData, small?: string}
