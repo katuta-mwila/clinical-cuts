@@ -1,6 +1,0 @@
-
-- Review how I style buttons
-
-- figure out pattern for first section and how it relates to nav
-- set up for possible paralax.
-- double check fonts and imports
